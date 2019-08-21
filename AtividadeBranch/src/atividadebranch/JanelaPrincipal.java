@@ -28,7 +28,7 @@ public class JanelaPrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        desktopPane1 = new atividadebranch.DesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         janelas = new javax.swing.JMenu();
         JanelaCliente = new javax.swing.JMenuItem();
@@ -46,8 +46,7 @@ public class JanelaPrincipal extends javax.swing.JFrame {
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jButton1.setText("ok");
+        getContentPane().add(desktopPane1, java.awt.BorderLayout.CENTER);
 
         janelas.setText("janelas");
 
@@ -66,28 +65,12 @@ public class JanelaPrincipal extends javax.swing.JFrame {
 
         setJMenuBar(jMenuBar1);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(393, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(242, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addContainerGap())
-        );
-
-        pack();
+        setSize(new java.awt.Dimension(600, 428));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void JanelaClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JanelaClienteActionPerformed
-        
+       desktopPane1.abrirJanelaCliente();
     }//GEN-LAST:event_JanelaClienteActionPerformed
 
     /**
@@ -127,7 +110,7 @@ public class JanelaPrincipal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem JanelaCliente;
-    private javax.swing.JButton jButton1;
+    private atividadebranch.DesktopPane desktopPane1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JPanel jPanel1;

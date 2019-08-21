@@ -16,6 +16,8 @@ public class Principal {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        JanelaPrincipal j = new JanelaPrincipal();
+        j.setVisible(true);
     }
     
 }
